@@ -31,7 +31,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
     >
       {/* <PancakeRoundIcon width="24px" mr="8px" /> */}
       <img src="/images/token-icon.png" alt="token icon" width="24px" />
-      <Text ml="8px" color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text ml="8px" color={color} bold>{`$${cakePriceUsd.toFixed(6)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
